@@ -56,16 +56,18 @@ print(c)
 
 
 ```python
+a = [1.0,2.5,5.5]
 a.append(2)
 print(a)
 a.append(6)
 print(a)
+b = ['a','f','t']
 b.append('h')
 print(b)
 ```
 
-    [1.0, 2.5, 5.5, 2, 6, 2, 6, 2]
-    [1.0, 2.5, 5.5, 2, 6, 2, 6, 2, 6]
+    [1.0, 2.5, 5.5, 2]
+    [1.0, 2.5, 5.5, 2, 6]
     ['a', 'f', 't', 'h']
     
 
@@ -122,7 +124,7 @@ print(a[2:])
     [5.5, 2, 6, 2, 6, 2]
     
 
-<img src="attachment:0c743374-7d9b-497c-8c6b-db62af949e04.png" width="60%">
+<img src="0c743374-7d9b-497c-8c6b-db62af949e04.png" width="60%">
 
 ### 5) 文字列への変換  
 文字列を要素とするリスト型の場合のみ
@@ -165,7 +167,7 @@ print(c)
     [['Alice', 20, 'England'], ['Bob', 19, 'United States'], ['Shohei', 29, 'Japan'], ['Mamiko', 28, 'Japan']]
     
 
-<img src="attachment:22955c86-b0c5-4246-baf3-580bd55f7a2f.png" width="60%">
+<img src="22955c86-b0c5-4246-baf3-580bd55f7a2f.png" width="60%">
 
 # 演習1. 
 1. Bob Ken Alice Kate を要素とするリストを作成せよ
@@ -209,9 +211,9 @@ print(c)
 
 1. 以下のように1行の要素が、名前 身長 体重 年齢 国籍　であるようなリストを作成し、それを要素とする2次元配列リストを作成せよ  
    Alice 170 60 20 England   Bob 185 75 19 United States  Shohei 192 85 30 Japan  Mamiko 183 75 28 Japan
-2. 以下のリストを1.に追加せよ  
+2. 以下のリストを1.に追加せよ
    Paul 185 80 31 France
-3. 上記2.の2次元配列からindexを使って以下の要素を取り出せ。  
+3. 上記2.の2次元配列からindexを使って以下の要素を取り出せ。
    - Shohei 192 85 30 Japan
    - Maimko
 4. 年齢の平均値を求めよ
@@ -299,7 +301,7 @@ print(d)
     13.75
     
 
-<img src="attachment:96aab3f9-1933-42bf-a926-9189f14b0d37.png" width="60%">
+<img src="96aab3f9-1933-42bf-a926-9189f14b0d37.png" width="60%">
 
 **ブロードキャスト**  
 numpyの要素に一括でスカラー演算を行うことができる（リスト型ではできない）
@@ -417,7 +419,7 @@ print(a[0:2,1:3])
      [3 5]]
     
 
-<img src="attachment:dd89b1ea-c001-47c3-99ea-f59c9200818e.png" width="60%">
+<img src="dd89b1ea-c001-47c3-99ea-f59c9200818e.png" width="60%">
 
 **2次元配列中の配列要素の長さは同一でないとエラーになる（リスト型ではOK)**
 
@@ -479,7 +481,7 @@ print(g)
      [ 9 10 11 12  3  3]]
     
 
-<img src="attachment:36417ec2-c805-4aaf-8520-ed475d274fc6.png" width="60%">
+<img src="36417ec2-c805-4aaf-8520-ed475d274fc6.png" width="60%">
 
 **2次元配列の合計**
 
@@ -505,7 +507,7 @@ print('列最大値',k)
     列最大値 [ 4  8 12]
     
 
-<img src="attachment:598198bb-683b-4270-acfd-d45466b846b2.png" width="60%">
+<img src="598198bb-683b-4270-acfd-d45466b846b2.png" width="60%">
 
 **ブロードキャスト**
 
@@ -621,7 +623,7 @@ print(x)
 
 # 演習1
 
-1. 以下のnumpy配列を作成して5を取り出せ  
+1. 以下のnumpy配列を作成して5を取り出せ
   1,3,5,7,9,11,13,15,17,19,21
 2. 同様に、9～15を取り出せ
 3. 同様に、1~7を取り出せ
@@ -632,6 +634,7 @@ print(x)
 
 
 ```python
+import numpy as np
 
 ```
 
@@ -690,7 +693,7 @@ print(x)
 
 # 演習3.
 
-1. 以下の1次元配列を3行4列のnumpy 2次元配列に変換せよ  
+1. 以下の1次元配列を3行4列のnumpy 2次元配列に変換せよ
    0,1,2,3,4,5,6,7,8,9,10,11
 2. 上記2次元配列について行合計、列合計を計算せよ
 3. 上記の1次元配列を4行3列のnumpy 2次元配列に変換せよ
